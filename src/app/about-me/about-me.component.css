@@ -1,0 +1,16 @@
+.text{
+  font-size: 20px;
+  height: 90%;
+  width: 70%;
+}
+
+h1{
+  margin-left: -20px;
+}
+
+hr{
+  width: 170%;
+  height: 5px;
+  background:#555358;
+  margin-left: -50px;
+}

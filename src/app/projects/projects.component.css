@@ -1,0 +1,16 @@
+p{
+  font-size: 17px;
+}
+
+a {
+  all: unset;
+}
+
+.container {
+  display:flex;
+}
+
+.example-card{
+  margin: 20px;
+  width: 40%;
+}

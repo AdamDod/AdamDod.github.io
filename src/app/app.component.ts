@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'InteractiveResume';
-  selectedPage = 'about-me';
 
-  constructor(private route:Router){
+  constructor(){
 
-  }
-
-  navigate(page:string){
-    this.selectedPage = page;
-    this.route.navigate(['/',page])
   }
 }

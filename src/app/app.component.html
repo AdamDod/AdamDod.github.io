@@ -3,9 +3,8 @@
   <mat-grid-tile class="name-tile" [colspan]="5"><h1 class="name">Adam Dodson</h1></mat-grid-tile>
   <mat-grid-tile class="pages" [colspan]="5" [rowspan]="1">
     <div class="btn-container">
-      <button [ngClass]="{'page-btn':true, 'selected-page':selectedPage == 'about-me'}" (click)="navigate('about-me')" mat-button>About Me</button>
-      <button [ngClass]="{'page-btn':true, 'selected-page':selectedPage == 'projects'}" (click)="navigate('projects')" mat-button>Projects</button>
-      <button [ngClass]="{'page-btn':true, 'selected-page':selectedPage == 'employment'}" (click)="navigate('employment')" mat-button>Employment</button>
+      <button [ngClass]="{'page-btn':true}" [routerLink]="['about-me']" routerLinkActive="selected-page" mat-button>About Me</button>
+      <button [ngClass]="{'page-btn':true}" [routerLink]="['projects']" routerLinkActive="selected-page" mat-button>Projects</button>
     </div>
   </mat-grid-tile>
   <mat-grid-tile class="links" [colspan]="1" [rowspan]="5">

@@ -1,6 +1,7 @@
 .links{
   display:block;
   border-top: 5px solid #555358;
+  border-right: 10px solid #555358
 }
 
 .link{
@@ -27,6 +28,9 @@
   height: min-content;
   color:#555358;
   font-weight:bold;
+  text-shadow: 7px 7px #89888c,
+  0px 7px #89888c
+  ;
 }
 
 .content{

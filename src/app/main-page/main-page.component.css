@@ -1,0 +1,116 @@
+body{
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin:20px;
+  height:500px;
+  min-height:30vh;
+}
+
+#project-container{
+  height:800px;
+}
+
+.introduction{
+  width:90%;
+  text-align:center;
+  height:100%;
+  background-image: url("../../assets/coding_splash.jpg");
+  background-size: cover;
+  background-color:rgb(162, 50, 50);
+}
+
+#introduction-name{
+  padding-top:200px;
+  font-size:50px;
+  font-weight:bold;
+  color:white;
+}
+
+#introduction-title{
+  color:white;
+}
+
+.bio{
+  display:flex;
+  width:90%;
+  align-items:center;
+  justify-content:center;
+  height:70%;
+}
+
+.subbox{
+  width:100%;
+  height:100%;
+  text-align:center;
+  display: flex;
+  justify-content:center;
+  background-color:#33343F;
+}
+
+#subbox-img{
+  background-image: url("../../assets/coding-splash2.jpg");
+  background-size: cover;
+}
+
+.subbox-text{
+  position: relative;
+  top: 40%;
+  width: 70%;
+  font-size: 20px;
+  color:white;
+  line-height: 30px;
+}
+
+.projects{
+  width:90%;
+  display:grid;
+  column-gap: 50px;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+
+.project{
+  height: min-content;
+  width: 100%;
+}
+
+.project-inner{
+  display:flex;
+  flex-direction: column;
+}
+.inner{
+  width:70%;
+  margin:20px;
+}
+
+#inner-img-portfolio{
+  background-image: url("../../assets/portfolio-website.PNG");
+  background-size: cover;
+  min-height: 200px;
+}
+
+#inner-img-boardgame{
+  background-image: url("../../assets/Board-game-screenshot.PNG");
+  background-size: cover;
+  min-height: 200px;
+}
+
+a {
+  all: unset;
+}
+
+@media (max-width:1000px){
+  .projects{
+    grid-template-columns:auto;
+  }
+}
+
+@media (max-width:600px){
+  .project-inner{
+    flex-direction: column;
+  }
+}

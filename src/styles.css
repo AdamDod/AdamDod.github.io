@@ -1,6 +1,8 @@
+
 body{
-  background-color:#faf0e5;
+  margin:0;
 }
 
-
-/* snow, milk, ivory, pearl, paper, corn silk, seashell, linen, cream and alabaster. */
+*{
+  font-family: 'Oswald', sans-serif;
+}

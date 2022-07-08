@@ -5,7 +5,7 @@ body{
   display: flex;
   align-items: center;
   justify-content:center;
-  margin:20px;
+  margin:5vw;
   height:500px;
   min-height:30vh;
 }
@@ -28,6 +28,7 @@ body{
   font-size:50px;
   font-weight:bold;
   color:white;
+  line-height:50px;
 }
 
 #introduction-title{
@@ -99,6 +100,16 @@ body{
   min-height: 200px;
 }
 
+.links{
+  display: flex;
+  justify-content: center;
+}
+
+.project-header{
+  text-align: center;
+  font-size: 50px;
+}
+
 a {
   all: unset;
 }
@@ -107,10 +118,22 @@ a {
   .projects{
     grid-template-columns:auto;
   }
+
+  .subbox-text{
+    top: 10%;
+  }
 }
 
 @media (max-width:600px){
   .project-inner{
+    flex-direction: column;
+  }
+
+  .subbox-text{
+    font-size: 10px;
+  }
+
+  .links{
     flex-direction: column;
   }
 }

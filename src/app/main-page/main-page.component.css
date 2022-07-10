@@ -5,8 +5,17 @@ body{
   display: flex;
   align-items: center;
   justify-content:center;
-  margin:5vw;
+  margin:3vw;
   height:500px;
+  min-height:30vh;
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin:3vw;
+  height:400px;
   min-height:30vh;
 }
 
@@ -20,7 +29,6 @@ body{
   height:100%;
   background-image: url("../../assets/coding_splash.jpg");
   background-size: cover;
-  background-color:rgb(162, 50, 50);
 }
 
 #introduction-name{
@@ -40,8 +48,9 @@ body{
   width:90%;
   align-items:center;
   justify-content:center;
-  height:70%;
+  height:90%;
 }
+
 
 .subbox{
   width:100%;
@@ -52,18 +61,37 @@ body{
   background-color:#33343F;
 }
 
+.subbox-text-container{
+  text-align:center;
+  display: flex;
+  justify-content:center;
+  background-color:rgba(0, 0, 0, 0.555);
+  width:100%;
+}
+
+.subbox-text-container:hover{
+  background-color:rgba(0, 0, 0, 0.676);
+}
+
 #subbox-img{
   background-image: url("../../assets/coding-splash2.jpg");
   background-size: cover;
 }
 
+#subbox-img-about-me{
+  background-image: url("../../assets/aircraft.webp");
+  background-size: cover;
+}
+
 .subbox-text{
   position: relative;
-  top: 40%;
+  top: 30%;
   width: 70%;
   font-size: 20px;
   color:white;
   line-height: 30px;
+  font-weight: bolder;
+  height: min-content;
 }
 
 .projects{
@@ -103,15 +131,33 @@ body{
 .links{
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: rgb(113,114,117);
+  background: linear-gradient(288deg, rgba(113,114,117,1) 0%, rgba(0,0,0,1) 54%);
+  height:min-content;
+  padding:20px;
+  color:white;
+  margin-bottom: 30px;
 }
 
 .project-header{
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 a {
   all: unset;
+}
+
+h2{
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.project-link{
+  height: 50px;
+  margin:10px;
 }
 
 @media (max-width:1000px){
@@ -120,7 +166,19 @@ a {
   }
 
   .subbox-text{
-    top: 10%;
+    top: 20%;
+  }
+
+  .subbox{
+    background-image: url("../../assets/coding-splash2.jpg");
+    background-size: cover;
+  }
+
+  #about-me-img{
+    background-image: url("../../assets/aircraft.webp");
+  }
+  #subbox-img, #subbox-img-about-me{
+    display: none;
   }
 }
 
@@ -130,10 +188,19 @@ a {
   }
 
   .subbox-text{
-    font-size: 10px;
+    font-size: 15px;
   }
 
   .links{
     flex-direction: column;
   }
+
+  .container{
+    height:400px;
+  }
+
+  #introduction-name{
+    padding-top:100px;
+  }
+
 }

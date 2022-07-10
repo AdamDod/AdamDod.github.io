@@ -69,9 +69,7 @@ body{
   width:100%;
 }
 
-.subbox-text-container:hover{
-  background-color:rgba(0, 0, 0, 0.676);
-}
+
 
 #subbox-img{
   background-image: url("../../assets/coding-splash2.jpg");
@@ -179,6 +177,10 @@ h2{
   }
   #subbox-img, #subbox-img-about-me{
     display: none;
+  }
+
+  .subbox-text-container:hover{
+    background-color:rgba(0, 0, 0, 0.676);
   }
 }
 

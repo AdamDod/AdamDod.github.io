@@ -31,6 +31,11 @@ body{
   background-size: cover;
 }
 
+.introduction-cover{
+  background-color: rgba(0, 0, 0, 0.411);
+  height:100%;
+}
+
 #introduction-name{
   padding-top:200px;
   font-size:50px;

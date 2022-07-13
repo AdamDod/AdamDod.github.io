@@ -19,8 +19,12 @@ body{
   min-height:30vh;
 }
 
+#skills-container{
+  height: min-content;
+}
+
 #project-container{
-  height:800px;
+  height:min-content;
 }
 
 .introduction{
@@ -66,6 +70,10 @@ body{
   background-color:#33343F;
 }
 
+#skills-img{
+  height:min-content;
+}
+
 .subbox-text-container{
   text-align:center;
   display: flex;
@@ -74,6 +82,16 @@ body{
   background: linear-gradient(341deg, rgba(113,114,117,1.6) 0%, rgba(36,36,36,.6) 100%);
   width:100%;
 }
+
+.subbox-text-container-skills{
+  text-align:center;
+  display: flex;
+  justify-content:center;
+  background: linear-gradient(341deg, rgba(245, 245, 245, 0.6) 0%, rgba(203, 203, 203, 0.6) 100%);
+  width:100%;
+}
+
+
 
 
 
@@ -97,26 +115,84 @@ body{
   font-weight: bolder;
   height: min-content;
 }
+#subbox-text-skills{
+  top: 0px;
+  width: 100%;
+  min-height: 400px;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-.projects{
-  width:90%;
-  display:grid;
-  column-gap: 50px;
-  grid-template-columns: 50% 50%;
+.skill-badge{
+  display: flex;
+  flex-direction: column;
+  max-width:100px;
+}
+
+
+#subbox-img-skills{
+  min-height: 400px;
+  background-color: rgb(68, 68, 70);
+  background-color: linear-gradient(341deg, rgba(113,114,117,1.6) 0%, rgba(36,36,36,.6) 100%);
+  align-items: center;
+}
+
+#subbox-img-skills h1{
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  top: 50%;
+  color: white;
+}
+
+#skills-bio{
   height: 100%;
+}
+
+img{
+  padding:10px;
+}
+.projects{
+  width:80%;
+  display:flex;
+  height: 100%;
+  font-size: larger;
 }
 
 .project{
   height: min-content;
-  width: 100%;
+  margin:10px;
+  width: 80%;
+  background-color:rgba(0, 0, 0, 0.397);
 }
 
 .project-inner{
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+
+#boardgame-project{
+  background-image: url("../../assets/splash.jpg");
+  background-size: cover;
+  color:white;
+}
+
+#portfolio-project{
+  background-image: url("../../assets/portfolio-website.PNG");
+  background-size: cover;
+  color:white;
+}
+
+.dimmer{
+  background-color: rgba(0, 0, 0, 0.624);
+  padding:20px;
+}
+
 .inner{
-  width:70%;
+  width:100%;
   margin:20px;
 }
 
@@ -127,7 +203,7 @@ body{
 }
 
 #inner-img-boardgame{
-  background-image: url("../../assets/Board-game-screenshot.PNG");
+  background-image: url("../../assets/splash.jpg");
   background-size: cover;
   min-height: 200px;
 }
@@ -148,6 +224,13 @@ body{
   text-align: center;
   font-size: 70px;
   font-weight: bold;
+  height: 100px;
+  padding-top:30px;
+}
+
+.project-header-container{
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -159,6 +242,11 @@ h2{
   text-decoration: underline;
 }
 
+h3{
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .project-link{
   height: 50px;
   margin:10px;
@@ -166,7 +254,12 @@ h2{
 
 @media (max-width:1000px){
   .projects{
-    grid-template-columns:auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .inner{
+    margin:5px;
   }
 
   .subbox-text{
@@ -181,8 +274,27 @@ h2{
   #about-me-img{
     background-image: url("../../assets/aircraft.webp");
   }
+
+  #skills-img{
+    background-image:none;
+  }
+
   #subbox-img, #subbox-img-about-me{
     display: none;
+  }
+
+  #skills-bio{
+    flex-direction: column;
+  }
+
+  #subbox-img-skills{
+    background-image:none;
+    height: 100px;
+    min-height: 100px;
+  }
+
+  #subbox-text-skills{
+    min-height: none;
   }
 
   .subbox-text-container:hover{
